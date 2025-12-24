@@ -14,7 +14,6 @@
     <link rel='stylesheet'
         href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-straight/css/uicons-solid-straight.css'>
 </head>
-
 <body class="bg-gray-500">
     <div class="flex items-center justify-center mt-20">
         <div class="bg-white p-8 w-1/3 rounded-3xl">
@@ -171,7 +170,7 @@
                 showToast('Pilih payment method dan tampilkan QR terlebih dahulu', false);
                 return;
             }
-            showToast('Pembayaran berhasil', true);
+            showToast('✅ Payment berhasil!', true);
             paymentMethod.value = '';
             handlePaymentChange();
             if (window.setQuantity) window.setQuantity(1);
