@@ -167,10 +167,10 @@
             const method = paymentMethod.value;
             const qrVisible = !paymentDetail.classList.contains('hidden') && paymentQr.src;
             if (!method || !qrVisible) {
-                showToast('Pilih payment method dan tampilkan QR terlebih dahulu', false);
+                showToast('Pilih Payment Method dan Tampilkan QR Terlebih Dahulu', false);
                 return;
             }
-            showToast('✅ Payment berhasil!', true);
+            showToast('✅ Payment Berhasil!', true);
             paymentMethod.value = '';
             handlePaymentChange();
             if (window.setQuantity) window.setQuantity(1);
